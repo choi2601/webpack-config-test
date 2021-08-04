@@ -1,1 +1,1 @@
-# webpack-practice
+# 웹팩 설정 연습 및 개념 
