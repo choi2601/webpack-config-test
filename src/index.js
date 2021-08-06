@@ -3,6 +3,7 @@ import styles from './index.module.scss';
 import $ from 'jquery';
 import sourceImg from './images/andre-alexander-N3V2uhtuDCo-unsplash.jpg';
 import sourceSvg from './images/01079 Quote Wild.svg';
+import '@babel/polyfill';
 
 function component() {
     const element = document.createElement('div');

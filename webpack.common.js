@@ -15,6 +15,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 //         }
 //     }
 // };
+// prefix를 자동으로 css에 추가시킴_auto-prefixer. 
+
+// -webkit- (Chrome, Safari, newer versions of Opera, almost all iOS browsers including Firefox for iOS; basically, any WebKit based browser)
+// -moz- (Firefox)
+// -o- (old pre-WebKit versions of Opera)
+// -ms- (Internet Explorer and Microsoft Edge)
 
 const isProduction = process.env.NODE_ENV === 'PRODUCTION';
 module.exports = {
@@ -85,6 +91,10 @@ module.exports = {
                         limit: 8192
                     }
                 }]
+            }, {
+                test: /.js/,
+                exclude: /node-modules/,
+                loader: 'babel-loader'
             }
         ]
     }, 
