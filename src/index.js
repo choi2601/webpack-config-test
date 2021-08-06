@@ -1,7 +1,7 @@
 import 'normalize.css';
 import styles from './index.module.scss';
 import $ from 'jquery';
-import soureImg from './images/andre-alexander-N3V2uhtuDCo-unsplash.jpg';
+import sourceImg from './images/andre-alexander-N3V2uhtuDCo-unsplash.jpg';
 import sourceSvg from './images/01079 Quote Wild.svg';
 
 function component() {
@@ -10,10 +10,9 @@ function component() {
 
     const imgElement = document.createElement('img');
     imgElement.src = sourceSvg;
-    // imgElement.width = 500;
-    // imgElement.height = 500;
+    imgElement.classList = styles.sourceImg;
 
-    console.log(soureImg);
+    console.log(sourceImg);
     console.log(styles);
     element.appendChild(imgElement);
 
